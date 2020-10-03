@@ -12,10 +12,10 @@ exports.max = function max (array) {
   return 0;
 }
 
-exports.avg = function avg (array) {
-    const reducer = (accumulator, currentValue) => accumulator + currentValue;
-    const preResult = (array.reduce(reducer());
-    console.log(preResult / array.length)
-    }
-  return 0;
+exports.avg = function avg (array) 
+    if (isArrayValid) {
+        const reducer = (accumulator, currentValue) => accumulator + currentValue;
+        const preResult = (array.reduce(reducer());
+        return preResult / array.length;
+    } else {return 0};
 }
