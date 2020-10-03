@@ -12,7 +12,7 @@ exports.max = function max (array) {
   return 0;
 }
 
-exports.avg = function avg (array) 
+exports.avg = function avg (array) {
     if (isArrayValid) {
         const reducer = (accumulator, currentValue) => accumulator + currentValue;
         const preResult = (array.reduce(reducer());
